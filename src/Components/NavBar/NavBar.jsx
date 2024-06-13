@@ -1,5 +1,4 @@
 import './NavBar.css'
-import '../../../public/assets/tienda-todo.jpeg'
 import { FaShoppingCart } from "react-icons/fa";
 
 
