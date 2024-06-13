@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Oswald:wght@200;300;400;500;600;700&family=Tiny5&display=swap');
+.container-logs{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+.container-logs li{
+    list-style-type: none;
+}
+.logos {
+   width: 100px;
+   height: 30px;
+   margin-right: 16px;
+   object-fit:contain;
+   margin-top: 0;
+   margin-bottom: 0;
+
+}
+.logos-envidia{
+    width: 120px;
+    height: 30px;
+   margin-right: 16px;
+   object-fit:cover;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+}
+
+.container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(153,0,182);
+    background: linear-gradient(100deg, rgba(153,0,182,0.9920343137254902) 52%, rgba(0,0,0,1) 86%);
+}
+
+.cart-widget {
+    color: rgb(22, 216, 48);
+    width: 20px;
+    height: 20px;
+}
+
+.cart-widget :hover{
+        color: white;  
+        transition: all 0.5s;
+}
+
+.container-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-link{
+    list-style-type: none;
+    font-family: "jersey 10";
+    margin: 0 20px 0 0;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 20 0 0;
+    padding: 10px 10px ;
+    color: rgb(22, 216, 48);
+    transition: all 0.5s;
+    width: max-content;
+}
+.nav-link a:hover{
+        transform-origin: 0 100%;
+        color: white;  
+}
