@@ -3,7 +3,7 @@ export let products =[
     
     {
     id:1,
-    title:"cpu-intel-core-i3-13100-lga1700",
+    title:"cpu intel core i3-13100-lga1700",
     price:200.660,
     stock:5,
     description:"El Intel Core i3 13100 es un procesador de cuatro núcleos y cuatro hilos basado en la arquitectura Raptor Lake S de Intel. Tiene una frecuencia base de 3,5 GHz y una frecuencia de impulso de hasta 4,5 GHz. El Core i3 13100 tiene 12 MB de caché L3 y un TDP de 60 W. Viene con la gráfica Intel UHD Graphics 730 integrada. Es un procesador asequible que ofrece un buen rendimiento general. Es una buena opción para tareas básicas como navegar por Internet, usar el correo electrónico y editar documentos. También es una buena opción para juegos ligeros.",
@@ -14,7 +14,7 @@ export let products =[
 ,
 {
     id:2,
-    title:"cpu-intel-i7-12700KF-lga1700",
+    title:"cpu intel-i7-12700KF-lga1700",
     price:388.000,
     stock:5,
     description:"El Intel Core i7-12700KF es un procesador de escritorio de alto rendimiento fabricado por Intel y lanzado en 2021. Forma parte de los procesadores Intel Core de 12.ª generación, también conocidos como Alder Lake-S. El i7-12700KF es un procesador de 12 núcleos y 20 subprocesos con una velocidad de reloj base de 3,6 GHz y una velocidad de reloj boost de hasta 5,0 GHz. También tiene 30 MB de memoria caché y admite memoria DDR5.",
@@ -47,7 +47,7 @@ export let products =[
 ,
 {
     id:5,
-    title:"cpu-intel-core-i9-12900k-lga1700",
+    title:"cpu intel-core-i9-12900k-lga1700",
     price:680.328,
     stock:5,
     description:"El procesador Intel Core i9 12900K LGA1700 es un procesador de alto rendimiento de dieciséis núcleos y treinta y dos hilos que ofrece un rendimiento excepcional tanto para aplicaciones de productividad como para juegos. Con una velocidad de reloj base de 3,2 GHz y una frecuencia turbo máxima de 5,2 GHz, este procesador es capaz de manejar tareas intensivas en recursos con facilidad. Además, cuenta con tecnologías avanzadas de Intel, como la tecnología Intel Turbo Boost Max 3.0 y la tecnología Intel Hyper-Threading, lo que permite que los procesos más exigentes se ejecuten con fluidez.",

@@ -1,11 +1,15 @@
 
+import ProductDetail from "../../Components/ProductDetailk/ProductDetail"
 
 
-function ItemDetail() {
+
+function ItemDetail({item}) {
   return (
-    <div>
-      
-    </div>
+       <ProductDetail
+            key={item.id} title={item.title} price={item.price}
+            img={item.img}
+            id={item.id}/>
+
   )
 }
 

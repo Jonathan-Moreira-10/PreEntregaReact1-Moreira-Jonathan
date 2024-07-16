@@ -71,8 +71,6 @@
     list-style-type: none;
     font-family: "jersey 10";
     margin: 0 20px 0 0;
-}
-.nav-link a{
     text-decoration: none;
     font-size: 22px;
     font-weight: 400;
@@ -82,7 +80,8 @@
     transition: all 0.5s;
     width: max-content;
 }
-.nav-link a:hover{
+
+.nav-link :hover{
         transform-origin: 0 100%;
         color: white;  
 }

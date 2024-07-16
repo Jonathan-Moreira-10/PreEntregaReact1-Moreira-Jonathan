@@ -1,40 +1,47 @@
 import { products } from "../../products";
 import ItemList from "./ItemList"
 import { useState, useEffect } from "react"
+import {useParams} from "react-router-dom"
 
-const ItemListContainer = ()=>{
+ const ItemListContainer  = ()=>{
+    
+    const [items, setItems]= useState([]);
 
-const [products, setProducts]=useState([]);
-const [error, setError]=useState ({})
+    const [error, setError]= useState({})
+    
+    const {category}=useParams ();
 
+    console.log(category)
 
- const getProducts = new Promise ((resolve,reject)=>{
-    let x =true
-    if(x){
-      resolve(products)
+    useEffect (()=>{
+
+        const getProucts = new Promise ((resolve, reject)=>{
+    //Una peticion que me traiga los productos desde el backend.
+
+    let x= true;
+
+    const productsFiltered= products.filter (product => product.category=== category)
+    if (x){
+       resolve(category ?productsFiltered : products);
     }
-  else{
-    reject({message: "error", codigo:"404"}) 
-  }
-     
- });
+    else{
+        reject ({message:"error", codigo:"404"});
 
-getProducts.then((res)=>{
-  setProducts(res);
-}).catch((error)=>{
-  setError({error})
-})
-
-console.log(getProducts)
-  return  (
-
-    <>
-      <ItemList/>
-   </>
-  )
-   
-   
-  
-};
+    }
+       
+        
+    });
+    //Manejar una promesa ele
+    getProucts.then((res)=>{
+        setItems(res)
+    }).catch((error)=>{
+        setError(error)
+    }) 
+    
+    },[category])
+    
+    
+    return (<ItemList items={items}/>)
+ }
 
 export default ItemListContainer;

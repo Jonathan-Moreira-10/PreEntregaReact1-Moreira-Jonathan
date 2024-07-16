@@ -1,19 +1,28 @@
+import ProductCard from "../../Components/ProductCard/ProductCard";
+import "./ProductsContainer.css";
 
 
-const ItemList = ({products}) => {
+const ItemList = ({items}) => {
   
-  console.log(products);
+  console.log(items);
   return (
-     <div style={{display: "flex", gap: "20px"}}>
+     <div className="products-container" >
       
-      
-        {products.length > 0 ? <h1>{products[0].title}</h1>:null} 
-      
-      
+      {
+        items.map((item )=>{
+          return (
+            <ProductCard
+            key={item.id} title={item.title} price={item.price}
+            img={item.img}
+            id={item.id}
+            description={item.description}/>
+          )
+        })
+      }
 
     </div>
    
-  )
-}
+  );
+};
 
 export default ItemList;
