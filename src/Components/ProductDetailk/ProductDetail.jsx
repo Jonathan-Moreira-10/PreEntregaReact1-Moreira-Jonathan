@@ -1,5 +1,7 @@
+import CounterContainer from "../Counter/CounterContainer"
 
-const ProductDetail = ({title,price,img,id}) => {
+
+const ProductDetail = ({title,price,img,id, onAdd}) => {
   return (
       
     <>
@@ -9,7 +11,9 @@ const ProductDetail = ({title,price,img,id}) => {
       <h2>{title}</h2>
       <img src={img}/>
       <h3>{price}</h3>
-      <h3>{id}</h3></div>
+      <h3>{id}</h3>
+      <CounterContainer onAdd={onAdd}/>
+      </div>
 
     
    </> 

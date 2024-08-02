@@ -1,5 +1,5 @@
 import './NavBar.css'
-import { Outlet} from 'react-router-dom';
+
 import CartWidget from '../CartWidget/CartWidget';
 import {Link} from "react-router-dom"
 
@@ -28,7 +28,6 @@ const  NavBar =()=> {
         <>{<CartWidget/>}</>
          </div>
         </>
-        <Outlet />
         </div>
      )
 }
